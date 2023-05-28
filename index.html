@@ -10,13 +10,18 @@
     <title>Glaccy Shop</title>
 </head>
 <body>
+  <div class="main-wrapper">
+
     <header class="header">
+
     <div class="header__container">
+
       <div class="header__logo">
         <a class="header__logo-link" href="index.html">
-          <img class="header__logo-img" alt="Логотип магазин Glaccy Shop" src="images/icons/logo.svg" width="137" height="56">
+          <img class="header__logo-img" alt="Логотип магазина Glaccy Shop" src="images/icons/logo.svg" width="137" height="56">
         </a>
       </div>
+
       <nav class="main-navigation">
           <ul class="main-navigation__list">
               <li class="main-navigation__item">
@@ -30,10 +35,13 @@
               </li>
           </ul>
       </nav>
+
           <ul class="header-button">
+
             <li class="header-button__item header-button__item-phone">
                 <a class="header-button__link" href="tel:+78005558628">+7 800 555-86-28</a>
             </li>
+
             <li class="header-button__item header-button__item-search">
                 <a class="header-button__link header-button__link-search" href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
@@ -41,7 +49,13 @@
                     </svg>
                     <span class="visually-hidden">Поиск</span>
                 </a>
+
+                <div class="header-button-form header-button-form-search">
+                  <input type="text" name="search" placeholder="Поиск по сайту">
+                </div>
+
             </li>
+
             <li class="header-button__item header-button__item-login">
                 <a class="header-button__link header-button__link-login" href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
@@ -56,53 +70,64 @@
                   </svg>Пусто
                 </a>
             </li>
-          </ul>  
+          </ul> 
+
     </div>
   </header>
+
     <main class="main-index">
-      <div class="page-container">
+
         <section class="promo">
+
            <div class="promo-swiper">
-                <div class="promo-swiper__wrapper-pink">
+
+                <div class="promo-swiper__wrapper-slider">
+
+                  <div class="promo-swiper__slider-description">
+                      <h3 class="promo-slider__title title-pink">Нежный пломбир <br> с клубничным джемом</h3>
+                      <p class="promo-slider__description promo__description-pink">Натуральное мороженое из свежих сливок <br> и молока с вкуснейшим клубничным джемом <br> – это идеальный десерт для всей семьи.</p>
+                      <a href="#" class="promo-slider__button-buy">Заказать</a>
+                  </div>
+
                   <div class="promo-swiper__slider-pink">
-                      <h3 class="promo-slider__title title-pink ">Нежный пломбир с клубничным джемом</h3>
-                      <p class="promo-slider__description promo__description-pink">Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
-                      <a href="#" class="promo-slider__button-buy">Заказать</a>
                       <img class="promo-slider__image-pink" src="images/ice-cream-1.png" alt="Мороженное с клубничным джемом" width="306" height="507">
+                      <div class="promo-slider__image-pink-circle"></div>
+                    <div class="promo-slider__button-prev">
+                      <button class="promo-slider__button" type="button">  
+                        <svg class="promo-slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z"/>
+                        </svg>
+                          <span class="visually-hidden">Предыдущее фото</span>
+                      </button>
                   </div>
-                  <div class="promo-swiper__slider-blue">
-                      <h3 class="promo-slider__title title-blue">Сливочное мороженое со вкусом банана</h3>
-                      <p class="promo-slider__description promo__description-blue">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день. </p>
-                      <a href="#" class="promo-slider__button-buy">Заказать</a>
-                      <img class="promo-slider__image-blue" src="images/ice-cream-2.png" alt="Сливочное мороженое со вкусом банана" width="306" height="507">
+
+                  <div class="promo-slider__button-next">
+                      <button class="promo-slider__button promo-slider__next" type="button">
+                        <svg class="promo-slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z"/>
+                        </svg>
+                      </button>
                   </div>
+
+                  </div>
+                  <div class="promo-swiper__slider-blue">  
+                    <img class="promo-slider__image-blue" src="images/ice-cream-2-min.png" alt="Сливочное мороженое со вкусом банана" width="66" height="150">
+                    <div class="promo-slider__image-circle"></div>
+                  </div>
+
                   <div class="promo-swiper__slider-yellow">
-                      <h3 class="promo-slider__title title-yellow">Карамельный пломбир с маршмеллоу</h3>
-                      <p class="promo-slider__description promo__description-yellow">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца сладкоежек всех возрастов.</p>
-                      <a href="#" class="promo-slider__button-buy">Заказать</a>
-                      <img class="promo-slider__image-yellow" src="images/ice-cream-3.png" alt="Карамельное мороженное с маршмеллоу" width="306" height="507">
-                  </div>
+                      <img class="promo-slider__image-yellow" src="images/ice-cream-3-min.png" alt="Карамельное мороженное с маршмеллоу" width="66" height="150 ">
+                      <div class="promo-slider__image-circle"></div>
+                    </div>
                 </div>
-                <div class="promo-slider__button-prev">
-                    <button class="promo-slider__button" type="button">  
-                      <svg class="promo-slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8033 3.80515C10.063 3.54545 10.063 3.12439 9.8033 2.8647C9.54361 2.605 9.12255 2.605 8.86285 2.8647L4.19477 7.53277C3.93593 7.79162 3.93508 8.21075 4.19221 8.47065C4.19338 8.47183 4.19454 8.47301 4.19572 8.47418L8.8638 13.1423C9.12349 13.402 9.54455 13.402 9.80425 13.1423C10.0639 12.8826 10.0639 12.4615 9.80425 12.2018L5.60545 8.00301L9.8033 3.80515Z"/>
-                      </svg>
-                        <span class="visually-hidden">Предыдущее фото</span>
-                    </button>
-                </div>
-                <div class="promo-slider__button-next">
-                    <button class="promo-slider__button promo-slider__next" type="button">
-                      <svg class="promo-slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.13526 2.8647C6.87557 2.605 6.45451 2.605 6.19481 2.8647C5.93511 3.12439 5.93511 3.54545 6.19481 3.80515L10.3961 8.00643L6.19477 12.2077C5.93508 12.4674 5.93508 12.8885 6.19477 13.1482C6.45447 13.4079 6.87553 13.4079 7.13523 13.1482L11.804 8.47944C11.8049 8.47852 11.8058 8.47759 11.8068 8.47666C12.0665 8.21696 12.0665 7.79591 11.8068 7.53621L7.13526 2.8647Z"/>
-                      </svg>
-                    </button>
-                </div>
+
+                <div class="promo-swiper__bottom">
                 <div class="promo-swiper__pagination">
                     <label class="promo-swiper__pagination-radio promo-swiper__pagination-left-cerrent" for="product-1" aria-label="Слайд номер 1"></label>
                     <label class="promo-swiper__pagination-radio" for="product-2" aria-label="Слайд номер 2"></label>
                     <label class="promo-swiper__pagination-radio" for="product-3" aria-label="Слайд номер 3"></label>
                 </div>
+
                 <ul class="promo-socials__list">
                     <li class="promo-socials__item promo-socials__item-vk">
                       <a class="promo-socials__link-vk" href="#">
@@ -126,6 +151,9 @@
                       </a> 
                     </li>
                 </ul>
+
+              </div>
+
             </div>
         </section>
         <section class="promotion">
@@ -147,7 +175,7 @@
                 <p class="promotion__text-gift text-marshmallow">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
                 <a class="promotion__button-gift" href="#">Хочу подарок</a>
                </div>
-               <div class="promotion__img-wrapper-marshmallow">
+               <div class="promotion__img-wrapper">
                 <img class="promotion__gift-img" alt="Фото Маршмеллоу даром!" src="images/marshmallow.png" width="232" height="249">
                </div>
               </li>
@@ -315,7 +343,6 @@
                     <a class="button contacts-block__button" href="#">Форма обратной связи</a>   
             </div>        
         </section>
-      </div>  
     </main>
         <footer class="footer">
             <div class="footer-socials">
@@ -365,5 +392,6 @@
                 <p class="footer-copyright__text">Сделано в<a href="https://htmlacademy.ru/intensive/htmlcss">.html academy</a> © 2021</p>
             </div>
         </footer>
+      </div>
 </body>
 </html>
